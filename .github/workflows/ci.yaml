@@ -18,7 +18,7 @@ jobs:
         - run: go test
         - run: go run math.go
 
-        - name: Sey up QEMU
+        - name: Set up QEMU
           uses: docker/setup-qemu-action@v2
 
         - name: Set up Docker Buildx
@@ -35,6 +35,6 @@ jobs:
           uses: docker/build-push-action@v2
           with:
             push: true
-            tags: everton19/ci-full_cycle-go:latest
+            tags: evertonteixeirapereira/ci-full_cycle-go:latest
 
     
